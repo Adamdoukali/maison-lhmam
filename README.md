@@ -34,7 +34,7 @@ cd maison-lhmam
 # Lancer le serveur local
 npm start
 # ou
-node server.js
+node local-server.js
 ```
 
 Le site est ensuite accessible sur : **http://localhost:5050/**

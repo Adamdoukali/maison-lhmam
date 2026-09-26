@@ -2,9 +2,9 @@
   "name": "maison-lhmam",
   "version": "1.0.0",
   "description": "Maison L'Hmam Fleuriste — Haute Scénographie & Créations Florales d'Exception Tanger",
-  "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node local-server.js",
+    "dev": "node local-server.js"
   },
   "keywords": [
     "florist",
