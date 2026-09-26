@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison L'Hmam Fleuriste | Haute Scénographie & Créations d'Exception Tanger</title>
+  <meta name="description" content="Maison L'Hmam Fleuriste à Tanger. Créations florales de luxe, 80 ans d'histoire à travers nos 5 boutiques emblématiques de 1947 à 2026.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Maison L'Hmam Fleuriste | Haute Scénographie Tanger">
+  <meta property="og:description" content="Découvrez nos créations florales d'exception et l'épopée de nos 5 boutiques à Tanger depuis 1947.">
+  <meta property="og:image" content="assets/images/flagship_2026.jpg">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+  <!-- Ambient Floating Petals & Cotton Canvas -->
+  <canvas id="floral-petals-canvas"></canvas>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span>Maison Fondée en 1947 • Tanger, Maroc</span>
+        <span class="top-bar-bullet">✦</span>
+        <span class="top-bar-highlight">Arrivage Frais : Coton Sauvage & Roses Rares</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener">@maisonlhmamofficial</a>
+        <span style="margin: 0 0.5rem; opacity: 0.3;">|</span>
+        <span>Livraison Express Tanger & Environs 7j/7</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Luxury Navigation Header -->
+  <header class="main-header">
+    <div class="container navbar">
+      <a href="#" class="brand-logo-wrap" title="Maison L'Hmam Fleuriste">
+        <img src="assets/logo.svg" alt="Maison L'Hmam Fleuriste" class="brand-logo-img">
+      </a>
+
+      <nav class="desktop-nav">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Accueil</a></li>
+          <li><a href="#collections" class="nav-link">Boutique</a></li>
+          <li><a href="#histoire" class="nav-link">Nos 5 Boutiques</a></li>
+          <li><a href="#mariages" class="nav-link">Scénographie</a></li>
+          <li><a href="#instagram" class="nav-link">Instagram</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="cart-toggle-btn" class="btn-cart-nav" aria-label="Ouvrir mon panier">
+          <span class="cart-icon-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+            <span class="cart-badge" id="cart-badge-count">0</span>
+          </span>
+          <span class="cart-nav-text">Panier</span>
+        </button>
+
+        <a href="#collections" class="btn btn-gold btn-header-order" style="padding: 0.65rem 1.25rem; font-size: 0.74rem;">
+          Commander
+        </a>
+
+        <!-- Hamburger Toggle for Mobile & Tablet Side Bar -->
+        <button id="mobile-sidebar-toggle" class="mobile-sidebar-btn" aria-label="Ouvrir le menu latéral">
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+          <span class="bar-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (MINIMAL TEXT & PURE EDITORIAL LUXURY) -->
+  <section id="hero" class="hero-editorial">
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Minimal Poetic Typography -->
+      <div class="hero-content">
+        <div class="hero-brand-seal">
+          <span>Tanger • Depuis 1947</span>
+        </div>
+        
+        <h1 class="hero-main-title">
+          L'Art Floral<br>
+          <span class="hero-title-accent">d'Exception</span>
+        </h1>
+        
+        <p class="hero-lead-text">
+          Haute couture végétale, scénographies princières et créations sur-mesure sublimant le détroit depuis huit décennies.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#collections" class="btn btn-gold">
+            Commander en Ligne
+          </a>
+          <a href="#histoire" class="btn btn-outline">
+            L'Épopée (1947–2026)
+          </a>
+        </div>
+
+        <div class="hero-stats-row">
+          <div class="hero-stat-item">
+            <span class="stat-number">1947</span>
+            <span class="stat-label">Année de Fondation</span>
+          </div>
+          <div class="hero-stat-separator"></div>
+          <div class="hero-stat-item">
+            <span class="stat-number">05</span>
+            <span class="stat-label">Boutiques à Tanger</span>
+          </div>
+          <div class="hero-stat-separator"></div>
+          <div class="hero-stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Fleurs & Coton d'Exception</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Full-Frame Luxury Photography -->
+      <div class="hero-visual-frame">
+        <div class="hero-image-wrap">
+          <img src="assets/images/founder_1947_vintage.jpg" alt="Fondateur Maison L'Hmam Fleuriste Grand Socco Tanger 1947" class="hero-main-img">
+          <div class="hero-image-overlay"></div>
+          <div class="hero-archive-tag">
+            <span class="archive-dot"></span>
+            <span>Archive Historique • 1947</span>
+          </div>
+          <div class="hero-floating-badge">
+            <div class="badge-ring"></div>
+            <div class="badge-text">
+              <strong>L'Atelier Fondateur • 1947</strong>
+              <span>Grand Socco • Tanger Historique</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCROLL-ANIMATED HISTORIC LANDMARKS (1947 -> 2026) -->
+  <section id="histoire" class="section-padding landmarks-campaign-section">
+    <div class="container">
+      
+      <div class="section-header-minimal">
+        <div class="campaign-badge">
+          <span>1947 — 2026 • Tanger</span>
+        </div>
+        <h2 class="section-title">L'Épopée de Nos 5 Boutiques</h2>
+        <p class="section-subline">Huit décennies d'exigence et de passion florale gravées dans la ville.</p>
+      </div>
+
+      <!-- Interactive Year Quick-Jump Bar -->
+      <div class="year-jump-bar">
+        <button class="year-pill active" data-target-year="1947">1947</button>
+        <button class="year-pill" data-target-year="1958">1958</button>
+        <button class="year-pill" data-target-year="2018">2018</button>
+        <button class="year-pill" data-target-year="2020">2020</button>
+        <button class="year-pill" data-target-year="2026">2026</button>
+      </div>
+
+      <!-- Alternating Milestone Timeline (Top Right -> Left -> Right -> Left -> Right) -->
+      <div class="timeline-zigzag-container">
+        
+        <!-- Continuous Glowing Center Axis Line -->
+        <div class="timeline-center-spine" aria-hidden="true"></div>
+
+        <!-- 1. 1947: Card on the RIGHT -->
+        <div class="timeline-step-row row-right" data-year="1947">
+          <div class="timeline-col timeline-ghost-col">
+            <span class="timeline-ghost-year">1947</span>
+          </div>
+
+          <div class="timeline-col timeline-node-col">
+            <div class="timeline-waypoint-dot active-dot" data-year="1947" title="1947 • Grand Socco">
+              <span class="dot-core"></span>
+              <span class="dot-ring"></span>
+            </div>
+            <div class="timeline-connector-arm arm-right"></div>
+          </div>
+
+          <div class="timeline-col timeline-card-col">
+            <article class="landmark-campaign-card card-right in-view" data-year="1947">
+              <div class="landmark-visual">
+                <img src="assets/images/founder_1947_vintage.jpg" alt="Maison L'Hmam 1947 Grand Socco" class="landmark-img" loading="lazy" style="object-position: center 22%;">
+                <div class="landmark-year-overlay">1947</div>
+              </div>
+              <div class="landmark-info">
+                <div class="landmark-top-meta">
+                  <span class="step-indicator">Étape 01 / 05</span>
+                  <span class="landmark-coords">35.7850° N, 5.8115° W</span>
+                </div>
+                <h3 class="landmark-name">Le Premier Atelier Fondateur</h3>
+                <div class="landmark-address">Grand Socco & Portes de la Médina</div>
+                <p class="landmark-punchline">
+                  Ouverture de la première boutique au cœur du Tanger international, fleuriste d'émotion des artistes et grandes réceptions.
+                </p>
+                <div class="landmark-badge-tag">Boutique N° 1 • Établie en 1947</div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 2. 1958: Card on the LEFT -->
+        <div class="timeline-step-row row-left" data-year="1958">
+          <div class="timeline-col timeline-card-col">
+            <article class="landmark-campaign-card card-left in-view" data-year="1958">
+              <div class="landmark-visual">
+                <img src="assets/images/bouquet_signature.jpg" alt="Maison L'Hmam 1958 Boulevard Pasteur" class="landmark-img" loading="lazy">
+                <div class="landmark-year-overlay">1958</div>
+              </div>
+              <div class="landmark-info">
+                <div class="landmark-top-meta">
+                  <span class="step-indicator">Étape 02 / 05</span>
+                  <span class="landmark-coords">35.7760° N, 5.8080° W</span>
+                </div>
+                <h3 class="landmark-name">Le Salon des Réceptions</h3>
+                <div class="landmark-address">Boulevard Pasteur • Quartier Français</div>
+                <p class="landmark-punchline">
+                  Installation sur la grande avenue. La maison devient le fleuriste attitré des ambassades et soirées de gala cosmopolites.
+                </p>
+                <div class="landmark-badge-tag">Boutique N° 2 • Établie en 1958</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="timeline-col timeline-node-col">
+            <div class="timeline-waypoint-dot" data-year="1958" title="1958 • Boulevard Pasteur">
+              <span class="dot-core"></span>
+              <span class="dot-ring"></span>
+            </div>
+            <div class="timeline-connector-arm arm-left"></div>
+          </div>
+
+          <div class="timeline-col timeline-ghost-col">
+            <span class="timeline-ghost-year">1958</span>
+          </div>
+        </div>
+
+        <!-- 3. 2018: Card on the RIGHT -->
+        <div class="timeline-step-row row-right" data-year="2018">
+          <div class="timeline-col timeline-ghost-col">
+            <span class="timeline-ghost-year">2018</span>
+          </div>
+
+          <div class="timeline-col timeline-node-col">
+            <div class="timeline-waypoint-dot" data-year="2018" title="2018 • Place Mozart">
+              <span class="dot-core"></span>
+              <span class="dot-ring"></span>
+            </div>
+            <div class="timeline-connector-arm arm-right"></div>
+          </div>
+
+          <div class="timeline-col timeline-card-col">
+            <article class="landmark-campaign-card card-right in-view" data-year="2018">
+              <div class="landmark-visual">
+                <img src="assets/images/wedding_arch.jpg" alt="Maison L'Hmam 2018 Place Mozart" class="landmark-img" loading="lazy">
+                <div class="landmark-year-overlay">2018</div>
+              </div>
+              <div class="landmark-info">
+                <div class="landmark-top-meta">
+                  <span class="step-indicator">Étape 03 / 05</span>
+                  <span class="landmark-coords">35.7680° N, 5.8030° W</span>
+                </div>
+                <h3 class="landmark-name">La Haute Scénographie</h3>
+                <div class="landmark-address">Place Mozart • Cœur Contemporain</div>
+                <p class="landmark-punchline">
+                  Atelier monumental consacré aux réceptions princières, décors d'arches et scénographies florales d'envergure.
+                </p>
+                <div class="landmark-badge-tag">Boutique N° 3 • Établie en 2018</div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- 4. 2020: Card on the LEFT -->
+        <div class="timeline-step-row row-left" data-year="2020">
+          <div class="timeline-col timeline-card-col">
+            <article class="landmark-campaign-card card-left in-view" data-year="2020">
+              <div class="landmark-visual">
+                <img src="assets/images/luxury_box.jpg" alt="Maison L'Hmam 2020 Baie de Tanger" class="landmark-img" loading="lazy">
+                <div class="landmark-year-overlay">2020</div>
+              </div>
+              <div class="landmark-info">
+                <div class="landmark-top-meta">
+                  <span class="step-indicator">Étape 04 / 05</span>
+                  <span class="landmark-coords">35.7790° N, 5.7820° W</span>
+                </div>
+                <h3 class="landmark-name">L'Atelier Nouveau & Sourcing Rare</h3>
+                <div class="landmark-address">Baie de Tanger • Front de Mer Malabata</div>
+                <p class="landmark-punchline">
+                  Écrin maritime exclusif : boîtes chapeau velours signature et roses d'altitude rares d'Équateur et Hollande.
+                </p>
+                <div class="landmark-badge-tag">Boutique N° 4 • Établie en 2020</div>
+              </div>
+            </article>
+          </div>
+
+          <div class="timeline-col timeline-node-col">
+            <div class="timeline-waypoint-dot" data-year="2020" title="2020 • Baie de Tanger">
+              <span class="dot-core"></span>
+              <span class="dot-ring"></span>
+            </div>
+            <div class="timeline-connector-arm arm-left"></div>
+          </div>
+
+          <div class="timeline-col timeline-ghost-col">
+            <span class="timeline-ghost-year">2020</span>
+          </div>
+        </div>
+
+        <!-- 5. 2026: Card on the RIGHT -->
+        <div class="timeline-step-row row-right" data-year="2026">
+          <div class="timeline-col timeline-ghost-col">
+            <span class="timeline-ghost-year">2026</span>
+          </div>
+
+          <div class="timeline-col timeline-node-col">
+            <div class="timeline-waypoint-dot" data-year="2026" title="2026 • Cap Spartel">
+              <span class="dot-core"></span>
+              <span class="dot-ring"></span>
+            </div>
+            <div class="timeline-connector-arm arm-right"></div>
+          </div>
+
+          <div class="timeline-col timeline-card-col">
+            <article class="landmark-campaign-card card-right in-view" data-year="2026">
+              <div class="landmark-visual">
+                <img src="assets/images/flagship_2026.jpg" alt="Maison L'Hmam 2026 Cap Spartel" class="landmark-img" loading="lazy">
+                <div class="landmark-year-overlay">2026</div>
+              </div>
+              <div class="landmark-info">
+                <div class="landmark-top-meta">
+                  <span class="step-indicator">Étape 05 / 05</span>
+                  <span class="landmark-coords">35.7920° N, 5.9250° W</span>
+                </div>
+                <h3 class="landmark-name">Le Nouveau Flagship du Futur</h3>
+                <div class="landmark-address">Cap Spartel • Riviera Atlantique</div>
+                <p class="landmark-punchline">
+                  Pavillon architectural de verre et basalte noir face à l'océan, salons de dégustation florale et collections d'exception.
+                </p>
+                <div class="landmark-badge-tag" style="color: var(--color-rose-bright); font-weight: 600;">
+                  Boutique N° 5 • Inauguration 2026
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COLLECTIONS (MINIMAL TEXT & PURE VISUALS) -->
+  <section id="collections" class="section-padding collections-section">
+    <div class="container">
+      
+      <div class="section-header-minimal">
+        <h2 class="section-title">Collections Signatures</h2>
+        <p class="section-subline">Compositions fraîches du jour sélectionnées avec exigence.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs-wrapper">
+        <button class="filter-btn active" data-filter="all">Toutes</button>
+        <button class="filter-btn" data-filter="cotton">Coton & Fleurs Rares</button>
+        <button class="filter-btn" data-filter="bouquets">Bouquets</button>
+        <button class="filter-btn" data-filter="boxes">Boîtes Chapeau</button>
+        <button class="filter-btn" data-filter="weddings">Mariages</button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="products-grid">
+        
+        <!-- NEW SIGNATURE: Coton Sauvage & Roses d'Alabâtre -->
+        <article class="product-card" data-category="cotton" data-id="cotton-alabatre" data-name="Le Coton Sauvage & Roses d'Alabâtre" data-price="950" data-img="assets/images/cotton_roses_bouquet.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag product-tag-gold">Nouveauté • Signature Coton</span>
+            <img src="assets/images/cotton_roses_bouquet.jpg" alt="Le Coton Sauvage & Roses d'Alabâtre" class="product-img">
+            <button class="quick-add-btn btn-add-to-cart" data-id="cotton-alabatre" data-name="Le Coton Sauvage & Roses d'Alabâtre" data-price="950" data-img="assets/images/cotton_roses_bouquet.jpg" title="Ajouter au Panier">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="product-body">
+            <div class="product-origin">Coton Brut Naturel • Roses Blanches d'Équateur</div>
+            <h3 class="product-title">Le Coton Sauvage & Roses d'Alabâtre</h3>
+            <p class="product-desc">Branches de coton immaculé, roses d'altitude et eucalyptus argenté dans son vase artisanal.</p>
+            <div class="product-footer">
+              <span class="product-price">950 MAD</span>
+              <div class="product-actions-group">
+                <button class="btn-product-cart btn-add-to-cart" data-id="cotton-alabatre" data-name="Le Coton Sauvage & Roses d'Alabâtre" data-price="950" data-img="assets/images/cotton_roses_bouquet.jpg">
+                  + Panier
+                </button>
+                <button class="btn-product-direct-order" data-id="cotton-alabatre" data-name="Le Coton Sauvage & Roses d'Alabâtre" data-price="950" data-img="assets/images/cotton_roses_bouquet.jpg">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Real Instagram signature creation: 100 Red Roses -->
+        <article class="product-card" data-category="bouquets" data-id="imperial-100-roses" data-name="L'Impérial 100 Roses Rouges" data-price="1200" data-img="assets/images/instagram/insta_roses_bouquet.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag">Signature @maisonlhmam</span>
+            <img src="assets/images/instagram/insta_roses_bouquet.jpg" alt="Bouquet Impérial 100 Roses Rouges" class="product-img">
+            <button class="quick-add-btn btn-add-to-cart" data-id="imperial-100-roses" data-name="L'Impérial 100 Roses Rouges" data-price="1200" data-img="assets/images/instagram/insta_roses_bouquet.jpg" title="Ajouter au Panier">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="product-body">
+            <div class="product-origin">100 Tiges Sélectionnées • Équateur</div>
+            <h3 class="product-title">L'Impérial 100 Roses Rouges</h3>
+            <p class="product-desc">Somptueux bouquet rond monumental de 100 roses velours rouge carmin, symbole absolu de passion.</p>
+            <div class="product-footer">
+              <span class="product-price">1 200 MAD</span>
+              <div class="product-actions-group">
+                <button class="btn-product-cart btn-add-to-cart" data-id="imperial-100-roses" data-name="L'Impérial 100 Roses Rouges" data-price="1200" data-img="assets/images/instagram/insta_roses_bouquet.jpg">
+                  + Panier
+                </button>
+                <button class="btn-product-direct-order" data-id="imperial-100-roses" data-name="L'Impérial 100 Roses Rouges" data-price="1200" data-img="assets/images/instagram/insta_roses_bouquet.jpg">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bouquets" data-id="david-austin" data-name="L'Impérial David Austin" data-price="850" data-img="assets/images/bouquet_signature.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag">Bestseller</span>
+            <img src="assets/images/bouquet_signature.jpg" alt="Bouquet Impérial David Austin" class="product-img">
+            <button class="quick-add-btn btn-add-to-cart" data-id="david-austin" data-name="L'Impérial David Austin" data-price="850" data-img="assets/images/bouquet_signature.jpg" title="Ajouter au Panier">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="product-body">
+            <div class="product-origin">Roses Anglaises David Austin • Parfum Sublime</div>
+            <h3 class="product-title">L'Impérial David Austin</h3>
+            <p class="product-desc">Pétales en chou délicats aux nuances pêche et crème poudrée, feuillage de saison parfumé.</p>
+            <div class="product-footer">
+              <span class="product-price">850 MAD</span>
+              <div class="product-actions-group">
+                <button class="btn-product-cart btn-add-to-cart" data-id="david-austin" data-name="L'Impérial David Austin" data-price="850" data-img="assets/images/bouquet_signature.jpg">
+                  + Panier
+                </button>
+                <button class="btn-product-direct-order" data-id="david-austin" data-name="L'Impérial David Austin" data-price="850" data-img="assets/images/bouquet_signature.jpg">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="boxes" data-id="boite-velours" data-name="Boîte Velours Alabâtre" data-price="980" data-img="assets/images/luxury_box.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag">Écrin de Luxe</span>
+            <img src="assets/images/luxury_box.jpg" alt="Boîte Velours Alabâtre" class="product-img">
+            <button class="quick-add-btn btn-add-to-cart" data-id="boite-velours" data-name="Boîte Velours Alabâtre" data-price="980" data-img="assets/images/luxury_box.jpg" title="Ajouter au Panier">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+          </div>
+          <div class="product-body">
+            <div class="product-origin">Boîte Chapeau Velours Noir & Dorure à Chaud</div>
+            <h3 class="product-title">Boîte Velours Alabâtre</h3>
+            <p class="product-desc">Écrin rond capitonné abritant des roses blanches d'altitude et touches végétales délicates.</p>
+            <div class="product-footer">
+              <span class="product-price">980 MAD</span>
+              <div class="product-actions-group">
+                <button class="btn-product-cart btn-add-to-cart" data-id="boite-velours" data-name="Boîte Velours Alabâtre" data-price="980" data-img="assets/images/luxury_box.jpg">
+                  + Panier
+                </button>
+                <button class="btn-product-direct-order" data-id="boite-velours" data-name="Boîte Velours Alabâtre" data-price="980" data-img="assets/images/luxury_box.jpg">
+                  Commander
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="weddings" data-id="arche-celeste" data-name="Arche Cérémonie Céleste" data-price="Sur Devis" data-img="assets/images/wedding_arch.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag">Scénographie Royale</span>
+            <img src="assets/images/wedding_arch.jpg" alt="Arche Cérémonie Céleste" class="product-img">
+          </div>
+          <div class="product-body">
+            <div class="product-origin">Grand Palais & Domaines de Tanger</div>
+            <h3 class="product-title">Arche Cérémonie Céleste</h3>
+            <p class="product-desc">Structure monumentale fleurie de roses d'Avalanche, hortensias et verdure tombante pour réceptions princières.</p>
+            <div class="product-footer">
+              <span class="product-price">Sur Devis</span>
+              <div class="product-actions-group">
+                <button class="btn-product-direct-order" data-id="arche-celeste" data-name="Arche Cérémonie Céleste" data-price="Sur Devis" data-img="assets/images/wedding_arch.jpg">
+                  Demande Devis
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="weddings" data-id="chemin-floral" data-name="Chemin Floral & Plafond Suspendu" data-price="Sur Devis" data-img="assets/images/scenography_table.jpg">
+          <div class="product-img-wrap">
+            <span class="product-tag">Grand Gala</span>
+            <img src="assets/images/scenography_table.jpg" alt="Chemin Floral & Plafond Suspendu" class="product-img">
+          </div>
+          <div class="product-body">
+            <div class="product-origin">Banquets & Salons Privés Tanger</div>
+            <h3 class="product-title">Chemin Floral & Plafond Suspendu</h3>
+            <p class="product-desc">Canopée végétale aérienne suspendue et chemins de table vivants illuminés à la bougie.</p>
+            <div class="product-footer">
+              <span class="product-price">Sur Devis</span>
+              <div class="product-actions-group">
+                <button class="btn-product-direct-order" data-id="chemin-floral" data-name="Chemin Floral & Plafond Suspendu" data-price="Sur Devis" data-img="assets/images/scenography_table.jpg">
+                  Demande Devis
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SCÉNOGRAPHIE DE MARIAGE (WITH REAL INSTAGRAM WEDDING STAGE) -->
+  <section id="mariages" class="section-padding wedding-section">
+    <div class="container">
+      
+      <div class="section-header-minimal">
+        <h2 class="section-title">Mariages & Décors Royaux</h2>
+        <p class="section-subline">Conception sur-mesure pour les plus beaux palais et réceptions de Tanger.</p>
+      </div>
+
+      <div class="wedding-visual-duo">
+        <div class="wedding-visual-box">
+          <img src="assets/images/instagram/insta_wedding_stage.jpg" alt="Scène Royale et Trône de Mariage Tanger Maison L'Hmam">
+          <div class="wedding-box-label">
+            <h3>Scénographie & Trône Nuptial</h3>
+            <p>Arche monumentale de fleurs blanches et sofa capitonné pour cérémonies d'exception</p>
+          </div>
+        </div>
+
+        <div class="wedding-visual-box">
+          <img src="assets/images/scenography_table.jpg" alt="Banquet Royal Palais Tanger">
+          <div class="wedding-box-label">
+            <h3>Banquets Royaux & Salons Privés</h3>
+            <p>Canopées florales suspendues et chemins de table infinis</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DIRECT FROM INSTAGRAM GALLERY (@maisonlhmamofficial) -->
+  <section id="instagram" class="section-padding instagram-gallery-section">
+    <div class="container">
+      
+      <div class="section-header-minimal">
+        <div class="campaign-badge">
+          <span>Instagram Officiel • 59K Abonnés</span>
+        </div>
+        <h2 class="section-title">Direct de l'Atelier</h2>
+        <p class="section-subline">
+          Suivez nos dernières créations florales, arrivages rares et décors d'exception à Tanger.
+        </p>
+        <div style="margin-top: 1.5rem;">
+          <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" class="btn btn-outline" style="gap: 0.6rem; font-size: 0.8rem; padding: 0.75rem 1.6rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Rejoindre @maisonlhmamofficial
+          </a>
+        </div>
+      </div>
+
+      <!-- Curated Instagram Grid -->
+      <div class="instagram-feed-grid">
+        
+        <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" class="insta-post-card">
+          <div class="insta-img-wrap">
+            <img src="assets/images/instagram/insta_roses_bouquet.jpg" alt="Création Maison L'Hmam 100 Roses Rouges">
+            <div class="insta-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>100 Roses d'Équateur</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" class="insta-post-card">
+          <div class="insta-img-wrap">
+            <img src="assets/images/instagram/insta_boutique_facade.jpg" alt="Façade Boutique Maison L'Hmam Tanger">
+            <div class="insta-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>L'Écrin Tangérois</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" class="insta-post-card">
+          <div class="insta-img-wrap">
+            <img src="assets/images/instagram/insta_wedding_stage.jpg" alt="Scène Royale Mariage Tanger">
+            <div class="insta-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Scène Nuptiale Royale</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" class="insta-post-card">
+          <div class="insta-img-wrap">
+            <img src="assets/images/instagram/insta_boutique_entrance.jpg" alt="Artisans Fleuristes Maison L'Hmam Tanger">
+            <div class="insta-overlay">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>L'Atelier au Quotidien</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LUXURY MINIMAL FOOTER -->
+  <footer id="contact" class="luxury-footer">
+    <div class="container">
+      
+      <div class="footer-content">
+        <div style="width: 200px;">
+          <img src="assets/logo.svg" alt="Maison L'Hmam Fleuriste" style="width: 100%; filter: brightness(1.2);">
+        </div>
+
+        <div style="font-size: 0.84rem; color: var(--color-text-muted);">
+          Boutiques & Ateliers à Tanger • Place Mozart • Cap Spartel • Grand Socco
+        </div>
+
+        <div>
+          <button class="btn btn-outline btn-open-cart-footer" style="padding: 0.65rem 1.4rem; font-size: 0.74rem;">
+            Voir Mon Panier (<span class="footer-cart-count">0</span>)
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Maison L'Hmam Fleuriste. Tous droits réservés.</div>
+        <div>
+          <a href="https://www.instagram.com/maisonlhmamofficial/" target="_blank" rel="noopener" style="color: var(--color-rose-light);">
+            @maisonlhmamofficial
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       LUXURY NAVIGATION SIDE BAR (MOBILE & TABLET SLIDE-OUT MENU)
+       ========================================================================= -->
+  <div id="nav-sidebar-overlay" class="nav-sidebar-overlay"></div>
+  <aside id="nav-sidebar" class="nav-sidebar">
+    <div class="nav-sidebar-header">
+      <div class="nav-sidebar-logo">
+        <img src="assets/logo.svg" alt="Maison L'Hmam Fleuriste">
+      </div>
+      <button id="nav-sidebar-close" class="nav-sidebar-close" aria-label="Fermer le menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="nav-sidebar-body">
+      <div class="sidebar-tagline">Haute Couture Florale • Tanger Depuis 1947</div>
+      
+      <ul class="sidebar-nav-links">
+        <li><a href="#hero" class="sidebar-link">Accueil</a></li>
+        <li><a href="#collections" class="sidebar-link">Boutique & Compositions</a></li>
+        <li><a href="#histoire" class="sidebar-link">Nos 5 Boutiques (1947–2026)</a></li>
+        <li><a href="#mariages" class="sidebar-link">Scénographie & Mariages</a></li>
+        <li><a href="#instagram" class="sidebar-link">Instagram Officiel</a></li>
+        <li><a href="#contact" class="sidebar-link">Contact & Adresses</a></li>
+      </ul>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="sidebar-actions">
+        <button class="btn btn-gold btn-sidebar-open-cart" style="width: 100%; justify-content: center; margin-bottom: 0.8rem; font-size: 0.76rem;">
+          Voir Mon Panier (<span class="sidebar-cart-badge">0</span>)
+        </button>
+        <a href="#collections" class="btn btn-outline btn-sidebar-close-nav" style="width: 100%; justify-content: center; font-size: 0.76rem;">
+          Commander en Ligne
+        </a>
+      </div>
+
+      <div class="sidebar-footer-meta">
+        <div><strong>Boutique Principale :</strong> Place Mozart, Tanger</div>
+        <div><strong>Flagship Riviera :</strong> Cap Spartel, Tanger</div>
+        <div><strong>Service Concierge :</strong> 7j/7 • Livraison Express</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       CART DRAWER (SLIDE-OVER LUXURY E-COMMERCE)
+       ========================================================================= -->
+  <div id="cart-drawer-overlay" class="cart-overlay"></div>
+  <aside id="cart-drawer" class="cart-drawer">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <h3>Votre Panier Floral</h3>
+        <span class="cart-subtitle" id="cart-item-count-text">0 création</span>
+      </div>
+      <button id="cart-close-btn" class="cart-close-btn" aria-label="Fermer le panier">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="cart-body">
+      <!-- Empty Cart View -->
+      <div id="cart-empty-view" class="cart-empty">
+        <div class="empty-icon">🌿</div>
+        <p class="empty-title">Votre panier est vide</p>
+        <p class="empty-text">Sélectionnez vos créations florales, branches de coton ou boîtes de velours pour composer votre commande.</p>
+        <a href="#collections" class="btn btn-gold btn-close-cart-action" style="margin-top: 1.5rem; font-size: 0.76rem;">
+          Explorer les Collections
+        </a>
+      </div>
+
+      <!-- Filled Cart Items List -->
+      <div id="cart-items-list" class="cart-items-list" style="display: none;"></div>
+
+      <!-- Luxury Upsell Options -->
+      <div id="cart-upsells-wrap" class="cart-upsells-wrap" style="display: none;">
+        <div class="upsell-heading">Sublimez Votre Commande</div>
+        
+        <label class="upsell-option">
+          <input type="checkbox" id="upsell-card" checked>
+          <span class="custom-checkbox"></span>
+          <div class="upsell-info">
+            <span class="upsell-name">Carte de vœux manuscrite à la plume</span>
+            <span class="upsell-price">Offerte</span>
+          </div>
+        </label>
+
+        <label class="upsell-option">
+          <input type="checkbox" id="upsell-ribbon" data-price="50">
+          <span class="custom-checkbox"></span>
+          <div class="upsell-info">
+            <span class="upsell-name">Ruban de soie brodé doré Maison L'Hmam</span>
+            <span class="upsell-price">+ 50 MAD</span>
+          </div>
+        </label>
+
+        <label class="upsell-option">
+          <input type="checkbox" id="upsell-vase" data-price="180">
+          <span class="custom-checkbox"></span>
+          <div class="upsell-info">
+            <span class="upsell-name">Vase céramique artisanal beige mat</span>
+            <span class="upsell-price">+ 180 MAD</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="cart-footer" id="cart-footer" style="display: none;">
+      <div class="cart-delivery-note">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <span>Livraison express offerte le jour même à Tanger</span>
+      </div>
+
+      <div class="cart-summary-row">
+        <span>Sous-total</span>
+        <span id="cart-subtotal-price">0 MAD</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Livraison Tanger</span>
+        <span class="text-gold">Gratuite</span>
+      </div>
+      <div class="cart-summary-total">
+        <span>Total de la Commande</span>
+        <span id="cart-total-price">0 MAD</span>
+      </div>
+
+      <!-- The WhatsApp Button Command -->
+      <button id="btn-proceed-whatsapp-order" class="btn-whatsapp-order-command">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        Commander via WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       WHATSAPP ORDER COMMAND MODAL (CHECKOUT & DIRECT DISPATCH)
+       ========================================================================= -->
+  <div id="order-modal-overlay" class="modal-overlay">
+    <div class="order-modal-card">
+      <button id="order-modal-close" class="modal-close-btn" aria-label="Fermer">✕</button>
+      
+      <div class="order-modal-header">
+        <div class="modal-brand-tag">Maison L'Hmam • Service Conciergerie Tanger</div>
+        <h2 class="modal-title">Finaliser Votre Commande</h2>
+        <p class="modal-subtitle">Renseignez les détails de livraison pour envoyer instantanément votre commande à notre atelier floral par WhatsApp.</p>
+      </div>
+
+      <form id="order-command-form" class="order-form">
+        <!-- Order Items Preview -->
+        <div class="order-items-preview" id="order-items-preview">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="client-name">Votre Nom & Prénom *</label>
+            <input type="text" id="client-name" placeholder="Ex: Karim Benjelloun" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="client-phone">Votre N° Téléphone / WhatsApp *</label>
+            <input type="tel" id="client-phone" placeholder="Ex: 06 12 34 56 78" required>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="recipient-name">Nom du Destinataire (si cadeau)</label>
+            <input type="text" id="recipient-name" placeholder="Ex: Sara El Alami (optionnel)">
+          </div>
+          
+          <div class="form-group">
+            <label for="delivery-date">Date & Créneau Souhaité *</label>
+            <input type="text" id="delivery-date" placeholder="Ex: Aujourd'hui à 16h / Demain matin" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="delivery-address">Quartier & Adresse de Livraison à Tanger *</label>
+          <input type="text" id="delivery-address" placeholder="Ex: Boulevard Pasteur, Malabata, Marshan, Boubana, Cap Spartel..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="card-message">Message pour la Carte de Vœux Calligraphiée (Offerte)</label>
+          <textarea id="card-message" rows="2" placeholder="Écrivez le mot délicat qui accompagnera vos fleurs..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Mode de Règlement Souhaité</label>
+          <div class="payment-radios">
+            <label class="radio-pill">
+              <input type="radio" name="payment-method" value="Paiement à la Livraison (Cash / TPE)" checked>
+              <span>À la Livraison (Cash / TPE)</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="payment-method" value="Virement Bancaire Instantané">
+              <span>Virement Bancaire</span>
+            </label>
+            <label class="radio-pill">
+              <input type="radio" name="payment-method" value="Retrait en Boutique à Tanger">
+              <span>Retrait en Boutique</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit-order-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          Envoyer ma Commande sur WhatsApp
+        </button>
+        <div class="modal-secure-note">
+          ✦ Validation instantanée par nos fleuristes • Livraison soignée Tanger
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- LUXURY TOAST NOTIFICATION -->
+  <div id="luxury-toast" class="luxury-toast"></div>
+
+  <!-- Scripts (Clean, Minimal, E-Commerce & Petals) -->
+  <script src="js/main.js?v=8"></script>
+</body>
+</html>
