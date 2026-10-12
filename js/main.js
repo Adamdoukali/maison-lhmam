@@ -524,20 +524,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Bind Product Card Add Buttons
-  document.querySelectorAll('.btn-add-to-cart').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      const card = btn.closest('.product-card') || btn;
-      const productData = {
-        id: btn.dataset.id || card.dataset.id,
-        name: btn.dataset.name || card.dataset.name,
-        price: btn.dataset.price || card.dataset.price,
-        img: btn.dataset.img || card.dataset.img
-      };
-      addToCart(productData, true);
-    });
+  // Delegated handler for product card add buttons
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-add-to-cart');
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const card = btn.closest('.product-card') || btn;
+    const productData = {
+      id: btn.dataset.id || card.dataset.id,
+      name: btn.dataset.name || card.dataset.name,
+      price: btn.dataset.price || card.dataset.price,
+      img: btn.dataset.img || card.dataset.img
+    };
+    addToCart(productData, true);
   });
 
   // Initial cart badge sync
@@ -640,19 +640,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Direct Order button on product cards ("Commander")
-  document.querySelectorAll('.btn-product-direct-order').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      const productData = {
-        id: btn.dataset.id,
-        name: btn.dataset.name,
-        price: btn.dataset.price === 'Sur Devis' ? 'Sur Devis' : parseInt(btn.dataset.price, 10),
-        img: btn.dataset.img,
-        quantity: 1
-      };
-      openOrderModal(productData);
-    });
+  // Delegated handler for direct order button ("Commander")
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.btn-product-direct-order');
+    if (!btn) return;
+    e.preventDefault();
+    const card = btn.closest('.product-card') || btn;
+    const rawPrice = btn.dataset.price || (card && card.dataset.price);
+    const productData = {
+      id: btn.dataset.id || (card && card.dataset.id),
+      name: btn.dataset.name || (card && card.dataset.name),
+      price: rawPrice === 'Sur Devis' ? 'Sur Devis' : parseInt(rawPrice, 10),
+      img: btn.dataset.img || (card && card.dataset.img),
+      quantity: 1
+    };
+    openOrderModal(productData);
   });
 
   // Handle Form Submission -> Builds WhatsApp Message Command
@@ -744,4 +746,17 @@ _Envoyé depuis la boutique officielle Maison L'Hmam Tanger_`;
       }
     });
   }
+
+  // Expose MaisonCart API globally for shop and other modular scripts
+  window.MaisonCart = {
+    addToCart,
+    openCart,
+    closeCart,
+    openOrderModal,
+    closeOrderModal,
+    showToast,
+    renderCart,
+    saveCart,
+    getCart: () => cart
+  };
 });

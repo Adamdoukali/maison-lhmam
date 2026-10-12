@@ -16,8 +16,18 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(__dirname, req.url === '/' ? 'index.html' : req.url.split('?')[0]);
-  const ext = path.extname(filePath).toLowerCase();
+  let cleanPath = req.url.split('?')[0];
+  if (cleanPath === '/') cleanPath = '/index.html';
+  if (cleanPath === '/commander') cleanPath = '/commande-facile.html';
+  let filePath = path.join(__dirname, cleanPath);
+  let ext = path.extname(filePath).toLowerCase();
+
+  // Clean URLs support: if no extension, check for .html
+  if (!ext && fs.existsSync(filePath + '.html')) {
+    filePath = filePath + '.html';
+    ext = '.html';
+  }
+
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
   fs.readFile(filePath, (err, content) => {
