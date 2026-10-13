@@ -12,13 +12,18 @@ const MIME_TYPES = {
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
   '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon'
+  '.ico': 'image/x-icon',
+  '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
+  '.woff2': 'font/woff2',
+  '.woff': 'font/woff',
+  '.ttf': 'font/ttf'
 };
 
 const server = http.createServer((req, res) => {
   let cleanPath = req.url.split('?')[0];
   if (cleanPath === '/') cleanPath = '/index.html';
-  if (cleanPath === '/commander') cleanPath = '/commande-facile.html';
+  if (cleanPath === '/commander' || cleanPath === '/shop' || cleanPath === '/boutique') cleanPath = '/shop.html';
   let filePath = path.join(__dirname, cleanPath);
   let ext = path.extname(filePath).toLowerCase();
 
@@ -30,7 +35,7 @@ const server = http.createServer((req, res) => {
 
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';
 
-  fs.readFile(filePath, (err, content) => {
+  fs.stat(filePath, (err, stats) => {
     if (err) {
       if (err.code === 'ENOENT') {
         res.writeHead(404, { 'Content-Type': 'text/plain' });
@@ -39,9 +44,35 @@ const server = http.createServer((req, res) => {
         res.writeHead(500);
         res.end(`Server Error: ${err.code}`);
       }
+      return;
+    }
+
+    if (stats.isDirectory()) {
+      filePath = path.join(filePath, 'index.html');
+      ext = '.html';
+    }
+
+    const range = req.headers.range;
+    if (range && (ext === '.mp4' || ext === '.webm')) {
+      const parts = range.replace(/bytes=/, "").split("-");
+      const start = parseInt(parts[0], 10);
+      const end = parts[1] ? parseInt(parts[1], 10) : stats.size - 1;
+      const chunksize = (end - start) + 1;
+      const fileStream = fs.createReadStream(filePath, { start, end });
+      res.writeHead(206, {
+        'Content-Range': `bytes ${start}-${end}/${stats.size}`,
+        'Accept-Ranges': 'bytes',
+        'Content-Length': chunksize,
+        'Content-Type': contentType,
+      });
+      fileStream.pipe(res);
     } else {
-      res.writeHead(200, { 'Content-Type': contentType });
-      res.end(content, 'utf-8');
+      res.writeHead(200, {
+        'Content-Length': stats.size,
+        'Content-Type': contentType,
+        'Accept-Ranges': 'bytes'
+      });
+      fs.createReadStream(filePath).pipe(res);
     }
   });
 });

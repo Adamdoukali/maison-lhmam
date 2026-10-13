@@ -2,5 +2,11 @@
   "version": 2,
   "cleanUrls": true,
   "buildCommand": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    { "source": "/commander", "destination": "/shop.html", "permanent": true },
+    { "source": "/commande-facile", "destination": "/shop.html", "permanent": true },
+    { "source": "/commande-facile.html", "destination": "/shop.html", "permanent": true },
+    { "source": "/shop", "destination": "/shop.html", "permanent": true }
+  ]
 }
