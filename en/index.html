@@ -77,7 +77,8 @@
         <a href="#maison" class="nav-item-link">Expertise</a>
         <a href="#creations" class="nav-item-link">Creations</a>
         <a href="#scenographie" class="nav-item-link">Scenography</a>
-        <a href="#histoire" class="nav-item-link">Our 5 Boutiques</a>
+        <a href="#boutiques" class="nav-item-link">Our Boutiques</a>
+        <a href="#histoire" class="nav-item-link">History</a>
         <a href="#contact" class="nav-item-link">Contact</a>
       </nav>
 
@@ -469,6 +470,109 @@
   </section>
 
   <!-- =========================================================================
+       SECTION 8.5: OUR BOUTIQUES & GOOGLE MAPS LOCATION ("iMap")
+       ========================================================================= -->
+  <section id="boutiques" class="boutiques-section">
+    <div class="container">
+      <div class="boutiques-header">
+        <div class="pill-badge">VISIT OUR BOUTIQUES · TANGIER</div>
+        <h2 class="section-big-heading">Our Two Signature Locations</h2>
+        <p class="section-body-text">
+          Meet our master florists at our two iconic Tangier botanical counters or request complimentary same-day express delivery across the city.
+        </p>
+      </div>
+
+      <div class="boutiques-grid">
+        <!-- Store Information Cards Column -->
+        <div class="boutique-cards-col">
+          <!-- Store 1 Card -->
+          <div class="boutique-card active" data-store="store1" data-lat="35.7665252" data-lng="-5.8578994" data-title="Maison L'Hmam — Moujahidine">
+            <span class="boutique-card-badge">Main Atelier & Creation Studio</span>
+            <h3 class="boutique-card-title">Maison L'Hmam — Moujahidine</h3>
+            <p class="boutique-card-address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5401" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Quartier Moujahidine, Tangier-Medina 90033, Tangier</span>
+            </p>
+            <div class="boutique-card-hours">
+              <span class="dot-pulse"></span>
+              <span>Open 7/7 : 08:30 – 22:00</span>
+            </div>
+            <div class="boutique-card-actions">
+              <a href="https://maps.app.goo.gl/Ni36PKvkmt94vurT6" target="_blank" rel="noopener noreferrer" class="btn-gmaps-link" aria-label="Google Maps Directions to Moujahidine Atelier">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+                <span>Google Maps Directions ↗</span>
+              </a>
+              <a href="https://wa.me/212661000000?text=Hello%20Maison%20L'Hmam%20Moujahidine" target="_blank" class="btn-gmaps-link" style="background:#fff; border:1px solid #ddd;">
+                <span>WhatsApp Atelier</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Store 2 Card -->
+          <div class="boutique-card" data-store="store2" data-lat="35.7717167" data-lng="-5.7970454" data-title="Maison L'Hmam 2 — Avenue Idriss Ier">
+            <span class="boutique-card-badge">Flagship Boutique & Salon</span>
+            <h3 class="boutique-card-title">Maison L'Hmam 2 — Avenue Idriss Ier</h3>
+            <p class="boutique-card-address">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ff5401" stroke-width="2" style="flex-shrink:0; margin-top:2px;">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Avenue Idriss Premier, City Center & Tangier Bay, Tangier</span>
+            </p>
+            <div class="boutique-card-hours">
+              <span class="dot-pulse"></span>
+              <span>Open 7/7 : 08:30 – 22:00</span>
+            </div>
+            <div class="boutique-card-actions">
+              <a href="https://maps.app.goo.gl/4JgsXBxLP4e6wzs16" target="_blank" rel="noopener noreferrer" class="btn-gmaps-link" aria-label="Google Maps Directions to Avenue Idriss Premier Boutique">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                </svg>
+                <span>Google Maps Directions ↗</span>
+              </a>
+              <a href="https://wa.me/212661000000?text=Hello%20Maison%20L'Hmam%20Avenue%20Idriss%20Premier" target="_blank" class="btn-gmaps-link" style="background:#fff; border:1px solid #ddd;">
+                <span>WhatsApp Boutique</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Google Map Frame ("iMap") -->
+        <div class="boutique-map-container">
+          <div class="map-toolbar">
+            <span class="map-toolbar-title" id="map-active-title">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#ff5401">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+              </svg>
+              <span id="map-status-text">Maison L'Hmam — Moujahidine</span>
+            </span>
+
+            <div class="map-tabs-group">
+              <button class="map-tab-btn active" data-target="store1">Moujahidine</button>
+              <button class="map-tab-btn" data-target="store2">Idriss I Ave</button>
+              <button class="map-tab-btn" data-target="both">Overview</button>
+            </div>
+          </div>
+
+          <div class="map-iframe-wrapper">
+            <iframe id="imap-frame"
+              title="Google Maps Maison L'Hmam Tangier"
+              src="https://maps.google.com/maps?q=35.7665252,-5.8578994&hl=en&z=16&output=embed"
+              loading="lazy"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
        SECTION 9: SOPHISTICATED MINIMAL FOOTER
        ========================================================================= -->
   <footer id="contact" class="footer-duyven">
@@ -502,7 +606,8 @@
             <li class="footer-link-item"><a href="#maison">Expertise</a></li>
             <li class="footer-link-item"><a href="#creations">Creations</a></li>
             <li class="footer-link-item"><a href="#scenographie">Scenography</a></li>
-            <li class="footer-link-item"><a href="#histoire">Our 5 Boutiques</a></li>
+            <li class="footer-link-item"><a href="#boutiques">Our 2 Boutiques</a></li>
+            <li class="footer-link-item"><a href="#histoire">History</a></li>
           </ul>
         </div>
 
@@ -520,10 +625,10 @@
 
         <!-- Contact & Boutiques -->
         <div>
-          <h5 class="footer-col-title">Contact & Boutiques</h5>
+          <h5 class="footer-col-title">Our 2 Boutiques in Tangier</h5>
           <div class="footer-contact-info">
-            <p><strong>Grand Socco:</strong> Place du 9 Avril 1947, Tangier</p>
-            <p><strong>Boulevard Pasteur:</strong> City Center, Tangier</p>
+            <p><strong>Moujahidine Atelier:</strong> Quartier Moujahidine, Tangier (<a href="https://maps.app.goo.gl/Ni36PKvkmt94vurT6" target="_blank" style="color:#ff5401; font-weight:600;">Google Maps ↗</a>)</p>
+            <p><strong>Idriss Ier Boutique:</strong> Avenue Idriss Premier, Tangier (<a href="https://maps.app.goo.gl/4JgsXBxLP4e6wzs16" target="_blank" style="color:#ff5401; font-weight:600;">Google Maps ↗</a>)</p>
             <p><strong>WhatsApp Concierge:</strong> +212 661 000 000</p>
             <p><strong>Hours:</strong> Open 7/7 from 08:30 to 22:00</p>
           </div>
@@ -561,7 +666,8 @@
       <li><a href="#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Expertise</a></li>
       <li><a href="#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Creations</a></li>
       <li><a href="#scenographie" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Scenography</a></li>
-      <li><a href="#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Our 5 Boutiques</a></li>
+      <li><a href="#boutiques" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Our Boutiques</a></li>
+      <li><a href="#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">History</a></li>
       <li><a href="#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Contact</a></li>
     </ul>
 
@@ -599,6 +705,9 @@
       });
     }
   </script>
+
+  <!-- Interactive Map Switcher -->
+  <script src="/js/imap.js"></script>
 
   <!-- GSAP 3 & ScrollTrigger Plugins -->
   <script src="/js/vendor/gsap.min.js"></script>
