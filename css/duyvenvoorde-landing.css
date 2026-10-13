@@ -428,7 +428,87 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.15rem;
+  padding-top: 0.6rem;
+  position: relative;
+  z-index: 20;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.hero-shop-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-promo-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #dc2626;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.22rem 0.65rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 4px 14px rgba(220, 38, 38, 0.55), 0 0 10px rgba(220, 38, 38, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  white-space: nowrap;
+  z-index: 5;
+  pointer-events: none;
+  animation: heroPromoPulse 2.4s ease-in-out infinite;
+}
+
+.hero-promo-badge .badge-dot-live {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 6px #ffffff;
+  display: inline-block;
+  animation: heroDotBlink 1.2s ease-in-out infinite;
+}
+
+@keyframes heroPromoPulse {
+  0%, 100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 4px 14px rgba(220, 38, 38, 0.55);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.75);
+  }
+}
+
+@keyframes heroDotBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.hero-btn-shop {
+  padding: 0.85rem 1.85rem;
+  box-shadow: 0 12px 32px rgba(255, 84, 1, 0.42);
+}
+
+.hero-btn-shop:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 38px rgba(255, 84, 1, 0.58);
 }
 
 .hero-caption-note {
@@ -1191,7 +1271,7 @@ button {
     height: 25px;
     max-width: 130px;
   }
-  .btn-duyven.pill-orange {
+  .floating-navbar .pill-orange {
     display: none;
   }
   .lang-switch {
@@ -1299,6 +1379,23 @@ button {
     flex-direction: column;
     gap: 0.75rem;
     text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+    max-width: 290px;
+    gap: 1.35rem;
+    margin: 0 auto;
+  }
+  .hero-shop-wrapper {
+    width: 100%;
+  }
+  .hero-cta-group .btn-duyven {
+    width: 100%;
+    justify-content: center;
   }
 }
 
