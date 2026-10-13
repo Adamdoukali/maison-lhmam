@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boutique Florale | Maison L'Hmam Fleuriste Tanger (Depuis 1947)</title>
+  <meta name="description" content="Découvrez la boutique florale d'exception de Maison L'Hmam à Tanger. Bouquets signatures, roses d'Équateur, coton sauvage et commande express WhatsApp.">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+
+  <!-- Multilingual SEO & Canonical -->
+  <link rel="canonical" href="https://maisonlhmam.vercel.app/fr/shop" />
+  <link rel="alternate" hreflang="fr" href="https://maisonlhmam.vercel.app/shop" />
+  <link rel="alternate" hreflang="en" href="https://maisonlhmam.vercel.app/en/shop" />
+  <link rel="alternate" hreflang="es" href="https://maisonlhmam.vercel.app/es/shop" />
+  <link rel="alternate" hreflang="x-default" href="https://maisonlhmam.vercel.app/shop" />
+
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:title" content="Boutique Florale | Maison L'Hmam Fleuriste Tanger" />
+  <meta property="og:description" content="Roses d'Équateur d'altitude, coton sauvage et haute couture florale à Tanger." />
+  <meta property="og:url" content="https://maisonlhmam.vercel.app/shop" />
+  <meta property="og:image" content="https://maisonlhmam.vercel.app/assets/images/cotton_roses_bouquet.jpg" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Maison L'Hmam Fleuriste — Boutique Florale",
+    "description": "Boutique florale d'exception et commande WhatsApp 7j/7 à Tanger.",
+    "url": "https://maisonlhmam.vercel.app/shop",
+    "telephone": "+212661000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Place du 9 Avril 1947, Grand Socco",
+      "addressLocality": "Tanger",
+      "addressCountry": "MA"
+    },
+    "priceRange": "$$$"
+  }
+  </script>
+
+  <!-- Smart Device Language Auto-Detection Engine -->
+  <script src="/js/lang-detect.js"></script>
+
+  <!-- Google Fonts: Barlow Condensed, Plus Jakarta Sans & Cormorant Garamond -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Ferm Living Inspired White Shop Stylesheet -->
+  <link rel="stylesheet" href="/css/fermliving-shop.css?v=3">
+</head>
+<body>
+
+  <!-- =========================================================================
+       SUSPENDED NAVBAR (DESIGN KIT PRESERVED FROM LANDING PAGE)
+       ========================================================================= -->
+  <div class="header-wrapper">
+    <header class="floating-navbar">
+      <!-- Brand Logo -->
+      <a href="/" class="nav-brand" aria-label="Maison L'Hmam Fleuriste Tanger">
+        <img src="/assets/logo.svg" alt="Maison L'Hmam Fleuriste Tanger" class="nav-brand-logo-img">
+      </a>
+
+      <!-- Center Desktop Navigation -->
+      <nav class="nav-center-menu" aria-label="Navigation principale">
+        <a href="/" class="nav-item-link">Accueil</a>
+        <a href="/#maison" class="nav-item-link">Savoir-Faire</a>
+        <a href="/#creations" class="nav-item-link">Créations</a>
+        <a href="/shop" class="nav-item-link active">Boutique</a>
+        <a href="/#scenographie" class="nav-item-link">Scénographie</a>
+        <a href="/#histoire" class="nav-item-link">Nos 5 Boutiques</a>
+        <a href="/#contact" class="nav-item-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Items -->
+      <div class="nav-actions-right">
+        <div class="lang-switch" aria-label="Langues">
+          <a href="/shop" class="lang-btn active" data-lang="fr" aria-label="Français">FR</a>
+          <span class="lang-sep">|</span>
+          <a href="/en/shop" class="lang-btn" data-lang="en" aria-label="English">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="/es/shop" class="lang-btn" data-lang="es" aria-label="Español">ES</a>
+        </div>
+
+        <!-- Cart Button with Count Badge -->
+        <button id="cart-toggle-btn" class="btn-nav-cart" aria-label="Ouvrir le panier floral">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span>Panier</span>
+          <span id="cart-nav-count" class="cart-count-bubble">0</span>
+        </button>
+
+        <!-- Signature Orange Pill Button -->
+        <a href="#catalogue" class="btn-duyven pill-orange" aria-label="Commander">
+          <span>Commander</span>
+          <span class="btn-circle-icon">
+            <svg viewBox="0 0 30 30" class="btn-icon-target" fill="none">
+              <circle cx="15" cy="15" r="9.5" stroke="#ffffff" stroke-width="2"/>
+              <circle cx="15" cy="15" r="3" fill="#ffffff"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobile-menu-toggle" class="mobile-menu-btn" aria-label="Menu">
+          Menu ⊙
+        </button>
+      </div>
+    </header>
+  </div>
+
+  <!-- =========================================================================
+       COLLECTION HERO (FERM LIVING EDITORIAL AESTHETIC)
+       ========================================================================= -->
+  <main class="container">
+    <section class="shop-hero-section">
+      <nav class="shop-breadcrumb" aria-label="Fil d'Ariane">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <span>Boutique Florale</span>
+      </nav>
+
+      <h1 class="shop-hero-title">La Boutique Florale</h1>
+      <p class="shop-hero-lead">
+        Haute couture florale, roses rares d'Équateur, bouquets monumentaux et boîtes de velours confectionnées chaque matin par nos maîtres artisans à Tanger depuis 1947.
+      </p>
+
+      <!-- Minimalist Control Bar (No cluttered categories, pure clean Ferm Living line) -->
+      <div id="catalogue" class="shop-controls-bar">
+        <div class="shop-controls-left">
+          <span class="shop-tab-active">Toutes les Créations</span>
+          <span id="shop-product-count" class="shop-count-badge">(14 créations d'exception)</span>
+        </div>
+
+        <div class="shop-controls-right">
+          <label for="shop-sort-select" class="shop-sort-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="12" x2="14" y2="12"></line>
+              <line x1="4" y1="18" x2="8" y2="18"></line>
+            </svg>
+            <span>Trier :</span>
+            <select id="shop-sort-select" class="shop-sort-select">
+              <option value="default">Coups de Cœur Maison L'Hmam</option>
+              <option value="price-asc">Prix : Croissant</option>
+              <option value="price-desc">Prix : Décroissant</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FERM LIVING 4-COLUMN PRODUCT GRID
+         ========================================================================= -->
+    <section id="ferm-product-grid" class="ferm-grid">
+      <!-- Populated dynamically by fermliving-shop.js with 14 products & editorial card -->
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       SLIDE-OUT LUXURY CART DRAWER (RIGHT PANEL)
+       ========================================================================= -->
+  <div id="cart-drawer-overlay" class="cart-drawer-overlay">
+    <aside class="cart-drawer" aria-label="Panier floral">
+      <div class="cart-drawer-header">
+        <h2 class="cart-drawer-title">Mon Panier Floral</h2>
+        <button id="cart-drawer-close" class="cart-drawer-close" aria-label="Fermer le panier">✕</button>
+      </div>
+
+      <div class="cart-delivery-banner">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        <span>Livraison express offerte le jour même à Tanger</span>
+      </div>
+
+      <div id="cart-items-container" class="cart-items-body">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Sous-total</span>
+          <span id="cart-subtotal-price">0 MAD</span>
+        </div>
+        <button id="btn-proceed-checkout" class="btn-cart-checkout">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          Commander sur WhatsApp
+        </button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- =========================================================================
+       WHATSAPP ORDER MODAL (DIRECT CHECKOUT DISPATCH)
+       ========================================================================= -->
+  <div id="order-modal-overlay" class="order-modal-overlay">
+    <div class="order-modal-card">
+      <button id="order-modal-close" class="order-modal-close" aria-label="Fermer">✕</button>
+      
+      <div class="order-modal-header">
+        <div class="modal-brand-tag">Maison L'Hmam • Conciergerie Florale Tanger</div>
+        <h2 class="order-modal-title">Finaliser Votre Commande</h2>
+        <p class="order-modal-sub">Renseignez vos coordonnées de livraison pour transmettre instantanément votre commande à nos artisans par WhatsApp.</p>
+      </div>
+
+      <div id="modal-items-summary">
+        <!-- Order items summary inserted here -->
+      </div>
+
+      <form id="order-checkout-form">
+        <div class="order-form-grid">
+          <div class="form-group">
+            <label for="client-name">Votre Nom & Prénom *</label>
+            <input type="text" id="client-name" placeholder="Ex: Karim Benjelloun" required>
+          </div>
+          <div class="form-group">
+            <label for="client-phone">N° Téléphone / WhatsApp *</label>
+            <input type="tel" id="client-phone" placeholder="Ex: 06 12 34 56 78" required>
+          </div>
+        </div>
+
+        <div class="order-form-grid">
+          <div class="form-group">
+            <label for="recipient-name">Destinataire (si cadeau)</label>
+            <input type="text" id="recipient-name" placeholder="Ex: Sara El Alami (optionnel)">
+          </div>
+          <div class="form-group">
+            <label for="delivery-date">Date & Créneau Souhaité *</label>
+            <input type="text" id="delivery-date" placeholder="Ex: Aujourd'hui à 16h / Demain matin" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="delivery-address">Quartier & Adresse de Livraison à Tanger *</label>
+          <input type="text" id="delivery-address" placeholder="Ex: Boulevard Pasteur, Malabata, Marshan, Boubana, Cap Spartel..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="card-message">Message pour la Carte de Vœux Calligraphiée (Offerte)</label>
+          <textarea id="card-message" rows="2" placeholder="Écrivez le mot délicat qui accompagnera vos fleurs..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Mode de Règlement Souhaité</label>
+          <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; cursor: pointer;">
+              <input type="radio" name="payment-method" value="À la Livraison (Cash / TPE)" checked>
+              <span>À la Livraison (Cash / TPE)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; cursor: pointer;">
+              <input type="radio" name="payment-method" value="Virement Bancaire">
+              <span>Virement Bancaire</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.4rem; font-size: 0.82rem; cursor: pointer;">
+              <input type="radio" name="payment-method" value="Retrait en Boutique">
+              <span>Retrait en Boutique Tanger</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-submit-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
+          Envoyer ma Commande sur WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       QUICK-VIEW BOTANICAL SPEC MODAL
+       ========================================================================= -->
+  <div id="qv-modal-overlay" class="qv-modal-overlay">
+    <div class="qv-modal-card">
+      <button id="qv-modal-close" class="order-modal-close" aria-label="Fermer">✕</button>
+      <div class="qv-img-side">
+        <img id="qv-img" src="" alt="Aperçu floral">
+      </div>
+      <div class="qv-info-side">
+        <span id="qv-badge" class="qv-badge"></span>
+        <h2 id="qv-title" class="qv-title"></h2>
+        <div id="qv-price" class="qv-price"></div>
+        <p id="qv-desc" class="qv-desc"></p>
+
+        <ul class="qv-spec-list">
+          <li><span>Variétés florales :</span><span id="qv-variety"></span></li>
+          <li><span>Provenance :</span><span id="qv-origin"></span></li>
+          <li><span>Dimensions :</span><span id="qv-dimensions"></span></li>
+          <li><span>Fraîcheur :</span><span id="qv-freshness"></span></li>
+        </ul>
+
+        <div class="qv-actions">
+          <button id="qv-btn-add" class="qv-btn-add">+ Ajouter au Panier</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MINIMAL LUXURY FOOTER (WHITE SCANDINAVIAN THEME)
+       ========================================================================= -->
+  <footer class="shop-footer">
+    <div class="container">
+      <div class="shop-footer-grid">
+        <div>
+          <a href="index.html">
+            <img src="/assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; filter: invert(1);">
+          </a>
+          <p class="footer-brand-desc">
+            Haute couture florale et scénographie d'exception à Tanger depuis 1947. 80 ans d'élégance végétale au confluent de la Méditerranée et de l'Atlantique.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#maison">Savoir-Faire</a></li>
+            <li><a href="index.html#creations">Créations</a></li>
+            <li><a href="index.html#scenographie">Scénographie</a></li>
+            <li><a href="index.html#histoire">Nos 5 Boutiques</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Boutiques à Tanger</h4>
+          <ul class="footer-nav-list">
+            <li>Grand Socco (Place 9 Avril)</li>
+            <li>Boulevard Pasteur</li>
+            <li>Malabata Corniche</li>
+            <li>Marina Bay Tanger</li>
+            <li>Tanger City Center</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Conciergerie</h4>
+          <ul class="footer-nav-list">
+            <li>WhatsApp : +212 661 000 000</li>
+            <li>Ouvert 7j/7 de 08h30 à 22h00</li>
+            <li>Livraison express Tanger offerte</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>© 1947–2026 Maison L'Hmam Fleuriste Tanger. Tous droits réservés.</span>
+        <span>Conçu dans l'esprit du design floral contemporain.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MOBILE NAVIGATION MODAL / DRAWER
+       ========================================================================= -->
+  <div id="mobile-menu-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); backdrop-filter:blur(15px); z-index:999; padding:2rem; flex-direction:column; justify-content:space-between;">
+    <div style="display:flex; justify-content:space-between; align-items:center;">
+      <img src="/assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; max-width: 170px; object-fit: contain;">
+      <button id="mobile-menu-close" style="font-size:1.8rem; color:#ffffff; padding:0.5rem; background:none; border:none; cursor:pointer;" aria-label="Fermer le menu">✕</button>
+    </div>
+
+    <!-- Mobile Language Selector -->
+    <div class="mobile-lang-drawer" style="display:flex; justify-content:center; align-items:center; gap:1.2rem; padding:0.75rem 0; margin:0.5rem 0; border-top:1px solid rgba(255,255,255,0.12); border-bottom:1px solid rgba(255,255,255,0.12);">
+      <a href="/shop" class="lang-btn active" data-lang="fr" style="color:#ff5401; font-weight:800; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">FRANÇAIS</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/en/shop" class="lang-btn" data-lang="en" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ENGLISH</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/es/shop" class="lang-btn" data-lang="es" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ESPAÑOL</a>
+    </div>
+
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:1.6rem;">
+      <li><a href="/" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Accueil</a></li>
+      <li><a href="/#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Savoir-Faire</a></li>
+      <li><a href="/#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Créations</a></li>
+      <li><a href="/shop" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:var(--brand-orange);">Boutique</a></li>
+      <li><a href="/#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Nos 5 Boutiques</a></li>
+      <li><a href="/#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Contact</a></li>
+    </ul>
+
+    <div>
+      <a href="#catalogue" class="btn-duyven pill-orange" style="width:100%; justify-content:center;">
+        <span>Commander sur WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- LUXURY TOAST NOTIFICATION -->
+  <div id="luxury-toast" class="luxury-toast">
+    <span class="luxury-toast-icon">✓</span>
+    <span id="toast-text"></span>
+  </div>
+
+  <!-- Ferm Living Shop Script -->
+  <script src="/js/fermliving-shop.js?v=3"></script>
+</body>
+</html>

@@ -5,6 +5,12 @@
   "outputDirectory": ".",
   "redirects": [
     { "source": "/commander", "destination": "/shop", "permanent": true },
-    { "source": "/commande-facile", "destination": "/shop", "permanent": true }
+    { "source": "/commande-facile", "destination": "/shop", "permanent": true },
+    { "source": "/french", "destination": "/fr/", "permanent": false },
+    { "source": "/french/shop", "destination": "/fr/shop", "permanent": false },
+    { "source": "/english", "destination": "/en/", "permanent": false },
+    { "source": "/english/shop", "destination": "/en/shop", "permanent": false },
+    { "source": "/spanish", "destination": "/es/", "permanent": false },
+    { "source": "/spanish/shop", "destination": "/es/shop", "permanent": false }
   ]
 }

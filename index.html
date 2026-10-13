@@ -4,16 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maison L'Hmam Fleuriste Tanger | Haute Couture Florale & Scénographie depuis 1947</title>
-  <meta name="description" content="Maison L'Hmam Fleuriste à Tanger. Haute scénographie florale, créations sur-mesure et livraison express 7j/7 depuis 1947. Access Nature's Finest.">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <meta name="description" content="Maison L'Hmam, fleuriste d'exception à Tanger depuis 1947. Haute scénographie florale, bouquets de roses d'Équateur, coton sauvage et livraison express 7j/7.">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
 
-  <!-- Google Fonts: Barlow Condensed (Duyvenvoorde bold display) & Plus Jakarta Sans (Clean Grotesk) -->
+  <!-- Multilingual SEO & Canonical -->
+  <link rel="canonical" href="https://maisonlhmam.vercel.app/" />
+  <link rel="alternate" hreflang="fr" href="https://maisonlhmam.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://maisonlhmam.vercel.app/en/" />
+  <link rel="alternate" hreflang="es" href="https://maisonlhmam.vercel.app/es/" />
+  <link rel="alternate" hreflang="x-default" href="https://maisonlhmam.vercel.app/" />
+
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:title" content="Maison L'Hmam Fleuriste Tanger | Haute Couture Florale depuis 1947" />
+  <meta property="og:description" content="Haute scénographie florale, roses rares d'Équateur et créations d'exception à Tanger depuis 1947." />
+  <meta property="og:url" content="https://maisonlhmam.vercel.app/" />
+  <meta property="og:image" content="https://maisonlhmam.vercel.app/assets/images/cotton_roses_bouquet.jpg" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Maison L'Hmam Fleuriste Tanger",
+    "description": "Haute scénographie florale et créations botaniques d'exception depuis 1947.",
+    "url": "https://maisonlhmam.vercel.app/",
+    "telephone": "+212661000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Place du 9 Avril 1947, Grand Socco",
+      "addressLocality": "Tanger",
+      "addressCountry": "MA"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      "opens": "08:30",
+      "closes": "22:00"
+    },
+    "priceRange": "$$$"
+  }
+  </script>
+
+  <!-- Smart Device Language Auto-Detection Engine -->
+  <script src="/js/lang-detect.js"></script>
+
+  <!-- Google Fonts: Barlow Condensed & Plus Jakarta Sans & Cormorant Garamond -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800;1,900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/duyvenvoorde-landing.css?v=10">
+  <link rel="stylesheet" href="/css/duyvenvoorde-landing.css?v=11">
 </head>
 <body>
 
@@ -23,8 +68,8 @@
   <div class="header-wrapper">
     <header class="floating-navbar">
       <!-- Brand Logo -->
-      <a href="index.html" class="nav-brand" aria-label="Maison L'Hmam Fleuriste Tanger">
-        <img src="assets/logo.svg" alt="Maison L'Hmam Fleuriste Tanger" class="nav-brand-logo-img">
+      <a href="/" class="nav-brand" aria-label="Maison L'Hmam Fleuriste Tanger">
+        <img src="/assets/logo.svg" alt="Maison L'Hmam Fleuriste Tanger" class="nav-brand-logo-img">
       </a>
 
       <!-- Center Desktop Navigation -->
@@ -38,14 +83,16 @@
 
       <!-- Right Action Items (Language & Webshop Pill Button) -->
       <div class="nav-actions-right">
-        <div class="lang-switch">
-          <span class="lang-btn active">FR</span>
+        <div class="lang-switch" aria-label="Langues">
+          <a href="/" class="lang-btn active" data-lang="fr" aria-label="Français">FR</a>
           <span class="lang-sep">|</span>
-          <span class="lang-btn">EN</span>
+          <a href="/en/" class="lang-btn" data-lang="en" aria-label="English">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="/es/" class="lang-btn" data-lang="es" aria-label="Español">ES</a>
         </div>
 
         <!-- The Signature Orange Webshop Button with Rotating Target Icon -->
-        <a href="shop.html" class="btn-duyven pill-orange" aria-label="Accéder à la Boutique">
+        <a href="/shop" class="btn-duyven pill-orange" aria-label="Accéder à la Boutique">
           <span>Boutique</span>
           <span class="btn-circle-icon">
             <svg viewBox="0 0 30 30" class="btn-icon-target" fill="none">
@@ -69,13 +116,13 @@
   <section class="hero-duyven">
     <!-- Looping High-Definition Floral Video Background -->
     <div class="hero-video-wrapper">
-      <video autoplay muted loop playsinline src="assets/hero-video.mp4" class="hero-video-element"></video>
+      <video autoplay muted loop playsinline src="/assets/hero-video.mp4" class="hero-video-element"></video>
       <div class="hero-video-overlay"></div>
     </div>
 
     <!-- Floating Transparent Corner Floral Cutouts -->
-    <img src="assets/flowers/1.cdeb15e7.png" alt="Pétale Floral" class="hero-float-flower-1" />
-    <img src="assets/flowers/3.1f2a55bd.png" alt="Anémone Sauvage" class="hero-float-flower-2" />
+    <img src="/assets/flowers/1.cdeb15e7.png" alt="Pétale Floral" class="hero-float-flower-1" />
+    <img src="/assets/flowers/3.1f2a55bd.png" alt="Anémone Sauvage" class="hero-float-flower-2" />
 
     <!-- Hero Centered Typography with Intersecting Architectural Lines -->
     <div class="hero-content">
@@ -130,7 +177,7 @@
             <circle id="hanging-stem-node" cx="150" cy="215" r="4.5" fill="#ff5401" />
           </svg>
           <!-- Real Yellow Dahlia / Specimen Flower Cutout -->
-          <img id="hanging-flower" src="assets/flowers/4.2b3f84d6.png" alt="Fleur d'Exception" class="specimen-flower-img" />
+          <img id="hanging-flower" src="/assets/flowers/4.2b3f84d6.png" alt="Fleur d'Exception" class="specimen-flower-img" />
         </div>
       </div>
 
@@ -176,7 +223,7 @@
       </div>
     </div>
     <!-- Layered Transparent Anemone Cutout -->
-    <img src="assets/flowers/3.1f2a55bd.png" alt="Anémone Sauvage" class="marquee-flower-layer" />
+    <img src="/assets/flowers/3.1f2a55bd.png" alt="Anémone Sauvage" class="marquee-flower-layer" />
   </section>
 
   <!-- =========================================================================
@@ -187,7 +234,7 @@
 
       <!-- Card 1: Our Story / Workshop with Big Overlay Heading -->
       <div class="story-card story-visual-card">
-        <img src="assets/images/founder_1947_vintage.jpg" alt="Fondateur Maison L'Hmam Fleuriste Grand Socco Tanger 1947" class="story-card-bg-img" style="object-position: center 20%;" />
+        <img src="/assets/images/founder_1947_vintage.jpg" alt="Fondateur Maison L'Hmam Fleuriste Grand Socco Tanger 1947" class="story-card-bg-img" style="object-position: center 20%;" />
         <div class="story-card-scrim"></div>
         <div class="story-card-content">
           <span class="story-card-tag">L'ATELIER FLORAL</span>
@@ -286,17 +333,17 @@
 
     <!-- 11 Floating Transparent Botanical Cutouts in Orbit -->
     <div class="mandala-flower-constellation">
-      <div class="flower-orbit-item f-pos-1"><img src="assets/flowers/1.1bb85467.png" alt="Rose Noble" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-2"><img src="assets/flowers/1.cdeb15e7.png" alt="Dahlia" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-3"><img src="assets/flowers/1.e0d2ae2b.png" alt="Pivoine" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-4"><img src="assets/flowers/2.1ffec2ae.png" alt="Cosmos" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-5"><img src="assets/flowers/2.79a63e77.png" alt="Succulente" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-6"><img src="assets/flowers/2.b3d149c6.png" alt="Marguerite" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-7"><img src="assets/flowers/2.c9d133a8.png" alt="Feuille Exotique" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-8"><img src="assets/flowers/3.1f2a55bd.png" alt="Anémone" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-9"><img src="assets/flowers/3.25c08641.png" alt="Bleuet" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-10"><img src="assets/flowers/3.4bee62ad.png" alt="Fleur d'Or" class="orbit-flower-img" /></div>
-      <div class="flower-orbit-item f-pos-11"><img src="assets/flowers/4.42270bb6.png" alt="Ranunculus" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-1"><img src="/assets/flowers/1.1bb85467.png" alt="Rose Noble" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-2"><img src="/assets/flowers/1.cdeb15e7.png" alt="Dahlia" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-3"><img src="/assets/flowers/1.e0d2ae2b.png" alt="Pivoine" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-4"><img src="/assets/flowers/2.1ffec2ae.png" alt="Cosmos" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-5"><img src="/assets/flowers/2.79a63e77.png" alt="Succulente" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-6"><img src="/assets/flowers/2.b3d149c6.png" alt="Marguerite" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-7"><img src="/assets/flowers/2.c9d133a8.png" alt="Feuille Exotique" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-8"><img src="/assets/flowers/3.1f2a55bd.png" alt="Anémone" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-9"><img src="/assets/flowers/3.25c08641.png" alt="Bleuet" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-10"><img src="/assets/flowers/3.4bee62ad.png" alt="Fleur d'Or" class="orbit-flower-img" /></div>
+      <div class="flower-orbit-item f-pos-11"><img src="/assets/flowers/4.42270bb6.png" alt="Ranunculus" class="orbit-flower-img" /></div>
     </div>
   </section>
 
@@ -342,10 +389,10 @@
 
       <div class="scenography-visual-col">
         <div class="sceno-card">
-          <img src="assets/images/wedding_arch.jpg" alt="Arche Florale Mariage Tanger" class="sceno-img" />
+          <img src="/assets/images/wedding_arch.jpg" alt="Arche Florale Mariage Tanger" class="sceno-img" />
         </div>
         <div class="sceno-card">
-          <img src="assets/images/scenography_table.jpg" alt="Scénographie de Table d'Honneur" class="sceno-img" />
+          <img src="/assets/images/scenography_table.jpg" alt="Scénographie de Table d'Honneur" class="sceno-img" />
         </div>
       </div>
     </div>
@@ -498,18 +545,29 @@
        ========================================================================= -->
   <div id="mobile-menu-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); backdrop-filter:blur(15px); z-index:999; padding:2rem; flex-direction:column; justify-content:space-between;">
     <div style="display:flex; justify-content:space-between; align-items:center;">
-      <img src="assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; max-width: 170px; object-fit: contain;">
-      <button id="mobile-menu-close" style="font-size:1.8rem; color:#ffffff; padding:0.5rem; background:none; border:none; cursor:pointer;">✕</button>
+      <img src="/assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; max-width: 170px; object-fit: contain;">
+      <button id="mobile-menu-close" style="font-size:1.8rem; color:#ffffff; padding:0.5rem; background:none; border:none; cursor:pointer;" aria-label="Fermer le menu">✕</button>
     </div>
-    <ul style="list-style:none; display:flex; flex-direction:column; gap:1.8rem;">
-      <li><a href="#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase;">Savoir-Faire</a></li>
-      <li><a href="#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase;">Créations</a></li>
-      <li><a href="#scenographie" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase;">Scénographie</a></li>
-      <li><a href="#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase;">Nos 5 Boutiques</a></li>
-      <li><a href="#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase;">Contact</a></li>
+
+    <!-- Mobile Language Selector -->
+    <div class="mobile-lang-drawer" style="display:flex; justify-content:center; align-items:center; gap:1.2rem; padding:0.75rem 0; margin:0.5rem 0; border-top:1px solid rgba(255,255,255,0.12); border-bottom:1px solid rgba(255,255,255,0.12);">
+      <a href="/" class="lang-btn active" data-lang="fr" style="color:#ff5401; font-weight:800; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">FRANÇAIS</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/en/" class="lang-btn" data-lang="en" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ENGLISH</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/es/" class="lang-btn" data-lang="es" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ESPAÑOL</a>
+    </div>
+
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:1.6rem;">
+      <li><a href="#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Savoir-Faire</a></li>
+      <li><a href="#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Créations</a></li>
+      <li><a href="#scenographie" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Scénographie</a></li>
+      <li><a href="#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Nos 5 Boutiques</a></li>
+      <li><a href="#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase;">Contact</a></li>
     </ul>
+
     <div>
-      <a href="shop.html" class="btn-duyven pill-orange" style="width:100%; justify-content:center;">
+      <a href="/shop" class="btn-duyven pill-orange" style="width:100%; justify-content:center;">
         <span>Accéder à la Boutique</span>
         <span class="btn-circle-icon">
           <svg viewBox="0 0 30 30" class="btn-icon-target" fill="none">
@@ -544,8 +602,8 @@
   </script>
 
   <!-- GSAP 3 & ScrollTrigger Plugins -->
-  <script src="js/vendor/gsap.min.js"></script>
-  <script src="js/vendor/ScrollTrigger.min.js"></script>
-  <script src="js/scroll-animations.js?v=3"></script>
+  <script src="/js/vendor/gsap.min.js"></script>
+  <script src="/js/vendor/ScrollTrigger.min.js"></script>
+  <script src="/js/scroll-animations.js?v=3"></script>
 </body>
 </html>

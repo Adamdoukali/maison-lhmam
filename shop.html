@@ -5,7 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boutique Florale | Maison L'Hmam Fleuriste Tanger (Depuis 1947)</title>
   <meta name="description" content="Découvrez la boutique florale d'exception de Maison L'Hmam à Tanger. Bouquets signatures, roses d'Équateur, coton sauvage et commande express WhatsApp.">
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+
+  <!-- Multilingual SEO & Canonical -->
+  <link rel="canonical" href="https://maisonlhmam.vercel.app/shop" />
+  <link rel="alternate" hreflang="fr" href="https://maisonlhmam.vercel.app/shop" />
+  <link rel="alternate" hreflang="en" href="https://maisonlhmam.vercel.app/en/shop" />
+  <link rel="alternate" hreflang="es" href="https://maisonlhmam.vercel.app/es/shop" />
+  <link rel="alternate" hreflang="x-default" href="https://maisonlhmam.vercel.app/shop" />
+
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:title" content="Boutique Florale | Maison L'Hmam Fleuriste Tanger" />
+  <meta property="og:description" content="Roses d'Équateur d'altitude, coton sauvage et haute couture florale à Tanger." />
+  <meta property="og:url" content="https://maisonlhmam.vercel.app/shop" />
+  <meta property="og:image" content="https://maisonlhmam.vercel.app/assets/images/cotton_roses_bouquet.jpg" />
+
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "Maison L'Hmam Fleuriste — Boutique Florale",
+    "description": "Boutique florale d'exception et commande WhatsApp 7j/7 à Tanger.",
+    "url": "https://maisonlhmam.vercel.app/shop",
+    "telephone": "+212661000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Place du 9 Avril 1947, Grand Socco",
+      "addressLocality": "Tanger",
+      "addressCountry": "MA"
+    },
+    "priceRange": "$$$"
+  }
+  </script>
+
+  <!-- Smart Device Language Auto-Detection Engine -->
+  <script src="/js/lang-detect.js"></script>
 
   <!-- Google Fonts: Barlow Condensed, Plus Jakarta Sans & Cormorant Garamond -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +52,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,800;0,900;1,800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Ferm Living Inspired White Shop Stylesheet -->
-  <link rel="stylesheet" href="css/fermliving-shop.css?v=2">
+  <link rel="stylesheet" href="/css/fermliving-shop.css?v=3">
 </head>
 <body>
 
@@ -23,27 +62,29 @@
   <div class="header-wrapper">
     <header class="floating-navbar">
       <!-- Brand Logo -->
-      <a href="index.html" class="nav-brand" aria-label="Maison L'Hmam Fleuriste Tanger">
-        <img src="assets/logo.svg" alt="Maison L'Hmam Fleuriste Tanger" class="nav-brand-logo-img">
+      <a href="/" class="nav-brand" aria-label="Maison L'Hmam Fleuriste Tanger">
+        <img src="/assets/logo.svg" alt="Maison L'Hmam Fleuriste Tanger" class="nav-brand-logo-img">
       </a>
 
       <!-- Center Desktop Navigation -->
       <nav class="nav-center-menu" aria-label="Navigation principale">
-        <a href="index.html" class="nav-item-link">Accueil</a>
-        <a href="index.html#maison" class="nav-item-link">Savoir-Faire</a>
-        <a href="index.html#creations" class="nav-item-link">Créations</a>
-        <a href="shop.html" class="nav-item-link active">Boutique</a>
-        <a href="index.html#scenographie" class="nav-item-link">Scénographie</a>
-        <a href="index.html#histoire" class="nav-item-link">Nos 5 Boutiques</a>
-        <a href="index.html#contact" class="nav-item-link">Contact</a>
+        <a href="/" class="nav-item-link">Accueil</a>
+        <a href="/#maison" class="nav-item-link">Savoir-Faire</a>
+        <a href="/#creations" class="nav-item-link">Créations</a>
+        <a href="/shop" class="nav-item-link active">Boutique</a>
+        <a href="/#scenographie" class="nav-item-link">Scénographie</a>
+        <a href="/#histoire" class="nav-item-link">Nos 5 Boutiques</a>
+        <a href="/#contact" class="nav-item-link">Contact</a>
       </nav>
 
       <!-- Right Action Items -->
       <div class="nav-actions-right">
-        <div class="lang-switch">
-          <span class="lang-btn active">FR</span>
+        <div class="lang-switch" aria-label="Langues">
+          <a href="/shop" class="lang-btn active" data-lang="fr" aria-label="Français">FR</a>
           <span class="lang-sep">|</span>
-          <span class="lang-btn">EN</span>
+          <a href="/en/shop" class="lang-btn" data-lang="en" aria-label="English">EN</a>
+          <span class="lang-sep">|</span>
+          <a href="/es/shop" class="lang-btn" data-lang="es" aria-label="Español">ES</a>
         </div>
 
         <!-- Cart Button with Count Badge -->
@@ -277,7 +318,7 @@
       <div class="shop-footer-grid">
         <div>
           <a href="index.html">
-            <img src="assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; filter: invert(1);">
+            <img src="/assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; filter: invert(1);">
           </a>
           <p class="footer-brand-desc">
             Haute couture florale et scénographie d'exception à Tanger depuis 1947. 80 ans d'élégance végétale au confluent de la Méditerranée et de l'Atlantique.
@@ -328,17 +369,28 @@
        ========================================================================= -->
   <div id="mobile-menu-overlay" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); backdrop-filter:blur(15px); z-index:999; padding:2rem; flex-direction:column; justify-content:space-between;">
     <div style="display:flex; justify-content:space-between; align-items:center;">
-      <img src="assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; max-width: 170px; object-fit: contain;">
-      <button id="mobile-menu-close" style="font-size:1.8rem; color:#ffffff; padding:0.5rem; background:none; border:none; cursor:pointer;">✕</button>
+      <img src="/assets/logo.svg" alt="Maison L'Hmam" style="height: 32px; width: auto; max-width: 170px; object-fit: contain;">
+      <button id="mobile-menu-close" style="font-size:1.8rem; color:#ffffff; padding:0.5rem; background:none; border:none; cursor:pointer;" aria-label="Fermer le menu">✕</button>
     </div>
-    <ul style="list-style:none; display:flex; flex-direction:column; gap:1.8rem;">
-      <li><a href="index.html" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:#fff;">Accueil</a></li>
-      <li><a href="index.html#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:#fff;">Savoir-Faire</a></li>
-      <li><a href="index.html#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:#fff;">Créations</a></li>
-      <li><a href="shop.html" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:var(--brand-orange);">Boutique</a></li>
-      <li><a href="index.html#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:#fff;">Nos 5 Boutiques</a></li>
-      <li><a href="index.html#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.4rem; font-weight:800; text-transform:uppercase; color:#fff;">Contact</a></li>
+
+    <!-- Mobile Language Selector -->
+    <div class="mobile-lang-drawer" style="display:flex; justify-content:center; align-items:center; gap:1.2rem; padding:0.75rem 0; margin:0.5rem 0; border-top:1px solid rgba(255,255,255,0.12); border-bottom:1px solid rgba(255,255,255,0.12);">
+      <a href="/shop" class="lang-btn active" data-lang="fr" style="color:#ff5401; font-weight:800; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">FRANÇAIS</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/en/shop" class="lang-btn" data-lang="en" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ENGLISH</a>
+      <span style="opacity:0.3; color:#ffffff;">|</span>
+      <a href="/es/shop" class="lang-btn" data-lang="es" style="color:#ffffff; font-weight:600; font-size:1.05rem; text-decoration:none; letter-spacing:0.05em;">ESPAÑOL</a>
+    </div>
+
+    <ul style="list-style:none; display:flex; flex-direction:column; gap:1.6rem;">
+      <li><a href="/" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Accueil</a></li>
+      <li><a href="/#maison" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Savoir-Faire</a></li>
+      <li><a href="/#creations" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Créations</a></li>
+      <li><a href="/shop" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:var(--brand-orange);">Boutique</a></li>
+      <li><a href="/#histoire" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Nos 5 Boutiques</a></li>
+      <li><a href="/#contact" class="mobile-nav-link" style="font-family:var(--font-display); font-size:2.2rem; font-weight:800; text-transform:uppercase; color:#fff;">Contact</a></li>
     </ul>
+
     <div>
       <a href="#catalogue" class="btn-duyven pill-orange" style="width:100%; justify-content:center;">
         <span>Commander sur WhatsApp</span>
@@ -353,6 +405,6 @@
   </div>
 
   <!-- Ferm Living Shop Script -->
-  <script src="js/fermliving-shop.js?v=2"></script>
+  <script src="/js/fermliving-shop.js?v=3"></script>
 </body>
 </html>

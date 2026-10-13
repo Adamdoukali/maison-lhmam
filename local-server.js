@@ -17,13 +17,32 @@ const MIME_TYPES = {
   '.webm': 'video/webm',
   '.woff2': 'font/woff2',
   '.woff': 'font/woff',
-  '.ttf': 'font/ttf'
+  '.ttf': 'font/ttf',
+  '.xml': 'application/xml; charset=utf-8',
+  '.txt': 'text/plain; charset=utf-8'
 };
 
 const server = http.createServer((req, res) => {
   let cleanPath = req.url.split('?')[0];
-  if (cleanPath === '/') cleanPath = '/index.html';
+
+  // Language alias mappings (/french, /english, /spanish)
+  if (cleanPath === '/french' || cleanPath === '/french/') cleanPath = '/fr/index.html';
+  if (cleanPath === '/french/shop' || cleanPath === '/french/shop.html') cleanPath = '/fr/shop.html';
+  if (cleanPath === '/english' || cleanPath === '/english/') cleanPath = '/en/index.html';
+  if (cleanPath === '/english/shop' || cleanPath === '/english/shop.html') cleanPath = '/en/shop.html';
+  if (cleanPath === '/spanish' || cleanPath === '/spanish/') cleanPath = '/es/index.html';
+  if (cleanPath === '/spanish/shop' || cleanPath === '/spanish/shop.html') cleanPath = '/es/shop.html';
+
+  // Standard root aliases
+  if (cleanPath === '/' || cleanPath === '') cleanPath = '/index.html';
   if (cleanPath === '/commander' || cleanPath === '/shop' || cleanPath === '/boutique') cleanPath = '/shop.html';
+  if (cleanPath === '/en' || cleanPath === '/en/') cleanPath = '/en/index.html';
+  if (cleanPath === '/en/shop') cleanPath = '/en/shop.html';
+  if (cleanPath === '/es' || cleanPath === '/es/') cleanPath = '/es/index.html';
+  if (cleanPath === '/es/shop') cleanPath = '/es/shop.html';
+  if (cleanPath === '/fr' || cleanPath === '/fr/') cleanPath = '/fr/index.html';
+  if (cleanPath === '/fr/shop') cleanPath = '/fr/shop.html';
+
   let filePath = path.join(__dirname, cleanPath);
   let ext = path.extname(filePath).toLowerCase();
 
